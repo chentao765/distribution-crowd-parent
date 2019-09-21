@@ -1,0 +1,10 @@
+server:
+  port: 1000
+eureka:
+  instance:
+    hostname: register-center
+  client:
+    register-with-eureka: false #注册中心，自己不需要注册
+    fetch-registry: false #自己不需要服务，只注册服务
+    server-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #register-center：1000/eureka

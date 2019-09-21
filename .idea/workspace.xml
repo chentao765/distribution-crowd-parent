@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99386751-5ad2-49b8-ab98-d2c980d95cff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-2-registry-center/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-2-registry-center/src/main/java/cn/ct/cloud/registryCenterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-2-registry-center/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/DatabaseProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/test/java/cn/ct/cloud/DatabaseProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/java/cn/ct/cloud/RedisProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/test/java/cn/ct/cloud/RedisProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/MemberManagerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/maven/apache-maven-3.6.1" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1R9S49egZb5u5WHyKoSAWnT9a88" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\distribution-crowd-parent\distribution-crowd-5-member-manager\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.RedisProviderTest">
+    <configuration name="DatabaseProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="distribution-crowd-3-database-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ct.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.ct.cloud" />
+      <option name="MAIN_CLASS_NAME" value="cn.ct.cloud.DatabaseProviderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="distribution-crowd-4-redis-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ct.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.ct.cloud" />
+      <option name="MAIN_CLASS_NAME" value="cn.ct.cloud.RedisProviderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="registryCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="distribution-crowd-2-registry-center" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ct.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ct.cloud.registryCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RedisProviderTest" />
+        <item itemvalue="JUnit.DatabaseProviderTest" />
+        <item itemvalue="Spring Boot.registryCenterApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99386751-5ad2-49b8-ab98-d2c980d95cff" name="Default Changelist" comment="" />
+      <created>1569077626082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569077626082</updated>
+      <workItem from="1569077633715" duration="5363000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
