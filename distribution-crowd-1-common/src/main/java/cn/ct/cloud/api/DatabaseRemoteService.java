@@ -17,4 +17,8 @@ public interface  DatabaseRemoteService {
     //保存注册用户信息
     @RequestMapping("/save/member/remote")
     ResultDTO<String> saveMemberRemote(@RequestBody Member member);
+
+    //根据LoginAcct查对象
+    @RequestMapping("/retrieve/member/by/login/acct")
+    public ResultDTO retrieveMemberByLoninAcctRemote(@RequestParam("loginAcct") String loginAcct);
 }

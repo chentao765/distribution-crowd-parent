@@ -23,4 +23,8 @@ public interface RedisOpeatorRemoteServic {
 
     @RequestMapping("/redis/remove/by/key")
     ResultDTO<String> removeByKey(@RequestParam("key") String key);
+
+    //保存token，id
+    @RequestMapping("/save/token/memberId")
+    ResultDTO saveTokenOfSignedMemberRemote(String token, Integer memberId);
 }

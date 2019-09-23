@@ -4,8 +4,10 @@ import cn.ct.cloud.aliyun.utils.HttpUtils;
 import org.apache.http.HttpResponse;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 public class CrownUtils {
+    //生成随机位数验证码
     public static String randomCode (int length){
         if(length<=0){
             throw new RuntimeException("验证码长度必须大于0");
@@ -28,7 +30,7 @@ public class CrownUtils {
         }
     }
 
-
+    //发送验证码
     public static void sendShortMessage(String appcode, String code, String phoneNum){
 
 
@@ -62,6 +64,11 @@ public class CrownUtils {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    //生成随机token
+    public static String generatorToken(){
+        return "signed_member_"+ UUID.randomUUID().toString().replace("-","");
     }
 
 }

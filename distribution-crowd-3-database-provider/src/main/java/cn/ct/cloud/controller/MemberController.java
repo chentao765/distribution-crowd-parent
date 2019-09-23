@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class MemberController {
     @Autowired
@@ -40,5 +42,20 @@ public class MemberController {
         }
 
         return ResultDTO.successNoData();
+    }
+
+    //根据LoginAcct查对象
+    @RequestMapping("/retrieve/member/by/login/acct")
+    public ResultDTO<Member> retrieveMemberByLoninAcctRemote(@RequestParam("loginAcct") String loginAcct){
+        Member member=null;
+        try {
+            member = memberService.getMemberByLoginAcct(loginAcct);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return  ResultDTO.failed(e.getMessage());
+        }
+
+        return ResultDTO.successWithData(member);
+
     }
 }

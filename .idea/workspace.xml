@@ -2,33 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99386751-5ad2-49b8-ab98-d2c980d95cff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/aliyun/utils/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/api/DatabaseRemoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/api/RedisOpeatorRemoteServic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/dto/ResultDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/utils/CrowdConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/utils/CrownUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/vo/MemberVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/test/java/cn/ct/cloud/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/service/api/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/java/cn/ct/cloud/controller/RedisOperationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/config/CrownConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-generator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-generator/src/main/resources/mybatis-generator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-1-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-1-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-2-registry-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-2-registry-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-3-database-provider/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-3-database-provider/target/classes/cn/ct/cloud/DatabaseProviderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/target/classes/cn/ct/cloud/DatabaseProviderApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/test/java/cn/ct/cloud/RedisProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/test/java/cn/ct/cloud/RedisProviderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/target/test-classes/cn/ct/cloud/RedisProviderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/target/test-classes/cn/ct/cloud/RedisProviderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/MemberManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/MemberManagerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/vo/MemberSignSuccessVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/api/DatabaseRemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/api/DatabaseRemoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/api/RedisOpeatorRemoteServic.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/api/RedisOpeatorRemoteServic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/dto/ResultDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/dto/ResultDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/utils/CrowdConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/utils/CrowdConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/utils/CrownUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/utils/CrownUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/service/api/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/service/api/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/service/impl/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/java/cn/ct/cloud/controller/RedisOperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/java/cn/ct/cloud/controller/RedisOperationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -180,7 +164,7 @@
       <updated>1569077626082</updated>
       <workItem from="1569077633715" duration="5713000" />
       <workItem from="1569113962025" duration="11692000" />
-      <workItem from="1569224646639" duration="19740000" />
+      <workItem from="1569224646639" duration="24647000" />
     </task>
     <servers />
   </component>
@@ -199,16 +183,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/controller/MemberController.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

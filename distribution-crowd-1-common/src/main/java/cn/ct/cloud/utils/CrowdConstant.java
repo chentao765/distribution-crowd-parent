@@ -1,4 +1,7 @@
 package cn.ct.cloud.utils;
+
+import org.omg.CORBA.StringHolder;
+
 /**
 * 存放常量
 */
@@ -26,4 +29,10 @@ public class CrowdConstant {
     public static final String RANDOMCODE_IS_ERROR="验证码错误";
 
     public static final  String LOGINACCOUNT_IS_USED="登录账号已经被使用";
+
+    public static final String PASSWORD_IS_ERROR="密码错误";
+
+    public static final String TOKEN_IS_NULL="令牌为空";
+
+    public static final String LOGINACCOUTORPASSWROD_IS_ERROR="用户名或密码错误";
 }

@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 public class MemberServiceImpl implements MemberService {
     @Autowired
@@ -32,5 +34,25 @@ public class MemberServiceImpl implements MemberService {
             throw new RuntimeException(e.getMessage());
         }
 
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Member getMemberByLoginAcct(String loginAcct) {
+        MemberExample memberExample=new MemberExample();
+        memberExample.createCriteria().andLoginacctEqualTo(loginAcct);
+        List<Member> members=null;
+        Member member=null;
+        try {
+            members = memberMapper.selectByExample(memberExample);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw  new RuntimeException(e.getMessage());
+        }
+        if(members!=null&&members.size()>0){
+           member=members.get(0);
+           return  member;
+        }
+        return null;
     }
 }

@@ -6,6 +6,7 @@ import cn.ct.cloud.dto.ResultDTO;
 import cn.ct.cloud.model.Member;
 import cn.ct.cloud.utils.CrowdConstant;
 import cn.ct.cloud.utils.CrownUtils;
+import cn.ct.cloud.vo.MemberSignSuccessVO;
 import cn.ct.cloud.vo.MemberVo;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
@@ -108,9 +109,65 @@ public class MemberController {
         BeanUtils.copyProperties(memberVo,member);
         databaseRemoteService.saveMemberRemote(member);
         return ResultDTO.successWithData("注册成功");
+    }
 
+    //执行具体的登录方法
+    @RequestMapping("/member/login")
+    public ResultDTO<MemberSignSuccessVO> login(@RequestParam("loginacct") String loginacct, @RequestParam("userpswd") String userpswd){
+        //1.验证用户名密码是否空
+        if(StringUtils.isBlank(loginacct)){
+            return  ResultDTO.failed(CrowdConstant.LOGINACCT_IS_NULL);
+        }
+
+        if(StringUtils.isBlank(userpswd)){
+            return ResultDTO.failed(CrowdConstant.PASSWROD_IS_NULL);
+        }
+
+        //2.根据用户名查用户
+        ResultDTO resultDTO = databaseRemoteService.retrieveMemberByLoninAcctRemote(loginacct);
+        if(resultDTO.getResult()==ResultDTO.FAILED){
+            return resultDTO;
+        }
+
+        Member member= (Member) resultDTO.getData();
+        if(member==null){
+            return ResultDTO.failed(CrowdConstant.LOGINACCOUTORPASSWROD_IS_ERROR);
+        }
+
+        //3.比对密码
+        if(!bCryptPasswordEncoder.encode(member.getUserpswd()).equals(member.getUserpswd())){
+            return ResultDTO.failed(CrowdConstant.PASSWORD_IS_ERROR);
+        }
+
+        //4.生成token
+        String token = CrownUtils.generatorToken();
+
+        //5.把token放入redis
+        Integer memberId=member.getId();
+        redisOpeatorRemoteServic.saveTokenOfSignedMemberRemote(token,memberId);
+
+        //返回MemberSignSuccessVO
+        MemberSignSuccessVO memberSignSuccessVO=new MemberSignSuccessVO();
+        BeanUtils.copyProperties(member,memberSignSuccessVO);
+        memberSignSuccessVO.setToken(token);
+
+        return  ResultDTO.successWithData(memberSignSuccessVO);
+    }
+
+    //退出登录：删除redis
+    @RequestMapping("/member/loginout")
+    public ResultDTO<String> loginOut(String token){
+        if(StringUtils.isBlank(token)){
+            return  ResultDTO.failed(CrowdConstant.TOKEN_IS_NULL);
+        }
+        ResultDTO<String> resultDTO = redisOpeatorRemoteServic.removeByKey(token);
+        if(resultDTO.getResult()==ResultDTO.FAILED){
+            return  resultDTO;
+        }
+        return  ResultDTO.successWithData("退出成功");
 
 
     }
+
 
 }

@@ -82,4 +82,16 @@ public class RedisOperationController {
         }
         return ResultDTO.successNoData();
     }
+
+    //保存token，id
+    @RequestMapping("/save/token/memberId")
+    ResultDTO saveTokenOfSignedMemberRemote(String token, Integer memberId){
+        try {
+            stringRedisTemplate.opsForValue().set(token,memberId.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+            return  ResultDTO.failed(e.getMessage());
+        }
+        return  ResultDTO.successNoData();
+    }
 }
