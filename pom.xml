@@ -60,7 +60,7 @@
         <pagehelper.version>5.0.3</pagehelper.version>
 
         <!-- jackson -->
-        <fastjosn.version>1.2.15</fastjosn.version>
+        <fastjosn.version>1.2.25</fastjosn.version>
 
 
 
