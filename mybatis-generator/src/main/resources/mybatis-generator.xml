@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--配置驱动我们在pom文件指定了-->
+   <!-- <classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />-->
+    <!--数据库连接-->
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://192.168.247.129:3306/distributed-crowd"
+                        userId="root"
+                        password="root">
+        </jdbcConnection>
+        <!--<javaTypeResolver>元素用于定义Java Type Resolver的属性。
+        Java类型解析器用于根据数据库列信息计算Java类型。
+        默认的Java Type Resolver尝试通过尽可能地替换Integral类型（Long，Integer，Short等）
+        来使JDBC DECIMAL和NUMERIC类型更易于使用。如果不希望这样做，
+        请将属性“ forceBigDecimals”设置为“ true”。如果您想要不同于默认行为的行为，
+        也可以替换自己的实现。此元素是<context>元素的可选子元素。-->
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!--生成model-->
+        <javaModelGenerator targetPackage="cn.ct.cloud.model" targetProject="D:\project\distribution-crowd-parent\distribution-crowd-1-common\src\main\java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!--生成xml-->
+        <sqlMapGenerator targetPackage="mapper"  targetProject="D:\project\distribution-crowd-parent\distribution-crowd-3-database-provider\src\main\resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!--生成mapper接口-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.ct.cloud.mapper"  targetProject="D:\project\distribution-crowd-parent\distribution-crowd-3-database-provider\src\main\java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <table  tableName="member" domainObjectName="Member" >
+        </table>
+
+    </context>
+</generatorConfiguration>

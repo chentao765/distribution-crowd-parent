@@ -9,12 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>distribution-crowd-1-commondis</module>
         <module>distribution-crowd-2-registry-center</module>
         <module>distribution-crowd-3-database-provider</module>
         <module>distribution-crowd-4-redis-provider</module>
         <module>distribution-crowd-5-member-manager</module>
         <module>distribution-crowd-1-common</module>
+        <module>mybatis-generator</module>
     </modules>
 
     <properties>
@@ -60,10 +60,9 @@
         <pagehelper.version>5.0.3</pagehelper.version>
 
         <!-- jackson -->
-        <jackson.version>2.9.8</jackson.version>
+        <fastjosn.version>1.2.15</fastjosn.version>
 
-        <!-- MBG -->
-        <mbg.version>1.3.5</mbg.version>
+
 
         <!-- 日志 -->
         <log4j.version>1.2.17</log4j.version>
@@ -156,6 +155,7 @@
                 <artifactId>httpclient</artifactId>
                 <version>${httpclient.version}</version>
             </dependency>
+
 
             <!-- jedis -->
             <dependency>
@@ -251,24 +251,9 @@
                 <version>${pagehelper.version}</version>
             </dependency>
 
-            <!-- jackson -->
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-core</artifactId>
-                <version>${jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>${jackson.version}</version>
-            </dependency>
 
-            <!-- MBG -->
-            <dependency>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-core</artifactId>
-                <version>${mbg.version}</version>
-            </dependency>
+
+
 
             <!-- 日志 -->
             <dependency>
@@ -292,6 +277,17 @@
                 <artifactId>logback-classic</artifactId>
                 <version>${logback.version}</version>
             </dependency>
+
+            <!--alibaba fastjson-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjosn.version}</version>
+            </dependency>
+
+
+
+
         </dependencies>
     </dependencyManagement>
 </project>

@@ -4,7 +4,7 @@ spring:
   application:
     name: redis-provider
   redis:
-    host: 192.168.247.132
+    host: 192.168.247.129
     port: 6379
 eureka:
   client:

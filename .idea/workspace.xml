@@ -2,21 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99386751-5ad2-49b8-ab98-d2c980d95cff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-2-registry-center/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-2-registry-center/src/main/java/cn/ct/cloud/registryCenterApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-2-registry-center/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/DatabaseProviderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/test/java/cn/ct/cloud/DatabaseProviderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/java/cn/ct/cloud/RedisProviderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/test/java/cn/ct/cloud/RedisProviderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/MemberManagerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/aliyun/utils/HttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/api/DatabaseRemoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/api/RedisOpeatorRemoteServic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/dto/ResultDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/utils/CrowdConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/utils/CrownUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/main/java/cn/ct/cloud/vo/MemberVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-1-common/src/test/java/cn/ct/cloud/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/service/api/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/java/cn/ct/cloud/service/impl/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/java/cn/ct/cloud/controller/RedisOperationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/config/CrownConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generator/src/main/resources/mybatis-generator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-1-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-1-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-2-registry-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-2-registry-center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-3-database-provider/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-3-database-provider/target/classes/cn/ct/cloud/DatabaseProviderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-3-database-provider/target/classes/cn/ct/cloud/DatabaseProviderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/test/java/cn/ct/cloud/RedisProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/src/test/java/cn/ct/cloud/RedisProviderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/target/test-classes/cn/ct/cloud/RedisProviderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-4-redis-provider/target/test-classes/cn/ct/cloud/RedisProviderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/MemberManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/MemberManagerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -79,8 +92,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RedisProviderTest">
-    <configuration name="DatabaseProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.DatabaseProviderApplication">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.ct.cloud.test" />
+      <module name="distribution-crowd-1-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ct.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="distribution-crowd-3-database-provider" />
       <extension name="coverage">
         <pattern>
@@ -88,14 +114,25 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.ct.cloud" />
-      <option name="MAIN_CLASS_NAME" value="cn.ct.cloud.DatabaseProviderTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ct.cloud.DatabaseProviderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MemberManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="distribution-crowd-5-member-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ct.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ct.cloud.MemberManagerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="distribution-crowd-4-redis-provider" />
       <extension name="coverage">
         <pattern>
@@ -103,9 +140,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.ct.cloud" />
-      <option name="MAIN_CLASS_NAME" value="cn.ct.cloud.RedisProviderTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ct.cloud.RedisProviderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,9 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RedisProviderTest" />
-        <item itemvalue="JUnit.DatabaseProviderTest" />
+        <item itemvalue="Spring Boot.DatabaseProviderApplication" />
+        <item itemvalue="Spring Boot.MemberManagerApplication" />
+        <item itemvalue="Spring Boot.RedisProviderApplication" />
         <item itemvalue="Spring Boot.registryCenterApplication" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -141,11 +178,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569077626082</updated>
-      <workItem from="1569077633715" duration="5363000" />
+      <workItem from="1569077633715" duration="5713000" />
+      <workItem from="1569113962025" duration="11692000" />
+      <workItem from="1569224646639" duration="19740000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/distribution-crowd-5-member-manager/src/main/java/cn/ct/cloud/controller/MemberController.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

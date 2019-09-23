@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="distribution-crowd-1-common" />
-        <module name="distribution-crowd-5-member-manager" />
+        <module name="mybatis-generator" />
         <module name="distribution-crowd-3-database-provider" />
-        <module name="distribution-crowd-4-redis-provider" />
+        <module name="distribution-crowd-5-member-manager" />
         <module name="distribution-crowd-2-registry-center" />
+        <module name="distribution-crowd-4-redis-provider" />
+        <module name="distribution-crowd-1-common" />
       </profile>
     </annotationProcessing>
   </component>
